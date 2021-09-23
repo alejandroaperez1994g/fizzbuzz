@@ -33,21 +33,12 @@ function App() {
   return (
     <div className="App">
       <h3>Welcome to FizzBuzz Test App</h3>
+      <h5>Type a number</h5>
       <input
         type="number"
         onChange={(event) => setNum(event.target.value)}
         name="input"
       />
-      <h2>
-        The number is{" "}
-        {num % 15 === 0
-          ? `FizzBuzz`
-          : num % 3 === 0
-          ? `Fizz`
-          : num % 5 === 0
-          ? `Buzz`
-          : num}
-      </h2>
       <NumberList numbers={num} />
     </div>
   );
